@@ -1,0 +1,6 @@
+# Runtime dependencies for run_mvp.py (the standalone, no-TouchDesigner path).
+# TouchDesigner only needs python-rtmidi, installed into its own interpreter --
+# it supplies its own camera capture and MediaPipe via the palette component.
+mediapipe>=0.10.21
+opencv-python>=4.11
+python-rtmidi>=1.5.8

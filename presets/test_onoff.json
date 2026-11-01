@@ -1,0 +1,23 @@
+{
+  "name": "test_onoff",
+  "description": "Bare minimum: open hand enables the plugin, fist bypasses it. Every other Harmony Engine setting is left to you.",
+  "_why_hand_openness": "Not open_hand/closed_fist: those need exactly 5 and exactly 0 fingers, so a half-relaxed hand matches neither and the state latches. hand_openness is continuous with a threshold at 0.5, so it is always definitively one or the other.",
+  "settings": {
+    "midi_port_name": "loopMIDI Port",
+    "midi_channel": 1
+  },
+  "mappings": [
+    {
+      "_target": "Reaper's FX Bypass for Harmony Engine, or its Wet. Both sit in the Param list. Flip \"invert\" if it comes out backwards.",
+      "label": "Effect On",
+      "gesture": "hand_openness",
+      "cc": 26,
+      "min": 0, "max": 127,
+      "invert": true,
+      "smoothing": 0.0,
+      "deadzone": 0.0,
+      "mode": "toggle",
+      "enabled": true
+    }
+  ]
+}

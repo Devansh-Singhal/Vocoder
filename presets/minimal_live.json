@@ -1,0 +1,46 @@
+{
+  "name": "minimal_live",
+  "description": "Three safe controls for a first gig: harmony level, glide, kill switch.",
+  "settings": {
+    "midi_port_name": "loopMIDI Port",
+    "midi_channel": 1
+  },
+  "mappings": [
+    {
+      "_target": "Voice 1-4 Gain -- learn this one CC onto all four faders",
+      "label": "Voice Gain",
+      "gesture": "hand_height",
+      "cc": 20,
+      "min": 0, "max": 110,
+      "invert": false,
+      "smoothing": 0.8,
+      "deadzone": 0.01,
+      "mode": "continuous",
+      "enabled": true
+    },
+    {
+      "_target": "Glide -> Transition Rate",
+      "label": "Glide Rate",
+      "gesture": "pinch_amount",
+      "cc": 23,
+      "min": 0, "max": 127,
+      "invert": false,
+      "smoothing": 0.75,
+      "deadzone": 0.012,
+      "mode": "continuous",
+      "enabled": true
+    },
+    {
+      "_target": "Reaper's own FX Bypass for Harmony Engine -- the kill switch",
+      "label": "Bypass",
+      "gesture": "closed_fist",
+      "cc": 26,
+      "min": 0, "max": 127,
+      "invert": false,
+      "smoothing": 0.0,
+      "deadzone": 0.0,
+      "mode": "toggle",
+      "enabled": true
+    }
+  ]
+}

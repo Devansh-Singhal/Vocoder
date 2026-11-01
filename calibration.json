@@ -1,0 +1,17 @@
+{
+  "pinch_min": 0.26564235408517783,
+  "pinch_max": 1.4404547465832016,
+  "spread_min": 0.6024514213330023,
+  "spread_max": 0.9568332896027388,
+  "reach_min": 0.3,
+  "reach_max": 0.8,
+  "thumb_middle_min": 0.5592035756675267,
+  "thumb_middle_max": 1.8983441043107836,
+  "distance_min": 0.2072684736061184,
+  "distance_max": 0.5334447177774407,
+  "rotation_min": -0.23725125211835207,
+  "rotation_max": 0.14117936591385183,
+  "straight_threshold": 0.7572478125645413,
+  "thumb_straight_threshold": 0.8632317129838729,
+  "thumb_abduction_threshold": 0.7340236442720047
+}
